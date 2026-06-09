@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>プライバシーポリシー | GolfSwingTracer</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #0A0C10; color: #E8EDF4;
+    font-family: -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+    line-height: 1.8; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  a { color: #5AAEEE; }
+  h1 { font-size: 1.5rem; border-bottom: 1px solid #1D2733; padding-bottom: 10px; }
+  h2 { font-size: 1.15rem; margin-top: 2em; color: #DFE7F2; }
+  h3 { font-size: 1rem; color: #CFD8E4; }
+  code { background: #141B24; padding: 2px 5px; border-radius: 4px; }
+  hr { border: none; border-top: 1px solid #1D2733; margin: 2em 0; }
+  nav { font-size: 0.85rem; margin-bottom: 24px; }
+  footer { margin-top: 48px; font-size: 0.8rem; color: #5A6678; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="./index.html">← 一覧へ</a></nav>
+<h1>プライバシーポリシー</h1>
+<p><strong>サービス名</strong>: GolfSwingTracer（以下「本アプリ」）
+<strong>提供者</strong>: mppstudio（以下「当方」）
+<strong>お問い合わせ</strong>: <a href="mailto:mpp.studio.admin@gmail.com">mpp.studio.admin@gmail.com</a>
+<strong>制定日</strong>: 2026年6月5日
+<strong>最終改定日</strong>: 2026年6月5日</p>
+<p>当方は、本アプリの提供にあたり、利用者（以下「ユーザー」）のプライバシーを尊重し、個人情報の保護に関する法律（個人情報保護法）その他の関連法令を遵守します。本ポリシーは、本アプリにおいて当方が取得する情報の種類、利用目的、第三者への提供、ユーザーの権利について定めるものです。</p>
+<hr>
+<h2>1. 取得する情報</h2>
+<p>本アプリでは、以下の情報を取得します。</p>
+<h3>1.1 ユーザーが入力・登録する情報</h3>
+<ul>
+<li><strong>メールアドレス</strong>: アカウント登録・サインインのために取得します。Google アカウントでサインインする場合、Google から提供される基本的なアカウント情報（メールアドレス等）を取得します。</li>
+</ul>
+<h3>1.2 ユーザーが本アプリ内で生成するコンテンツ</h3>
+<ul>
+<li><strong>スイング動画</strong>: カメラで撮影したスイング動画は、<strong>ユーザーの端末内にのみ保存</strong>されます。当方のサーバーに動画全体がアップロードされることはありません。</li>
+<li><strong>姿勢推定データ</strong>: 撮影中に端末内で計算される関節位置等のデータ（骨格情報）は、端末内に保存されます。</li>
+<li>これらのコンテンツのうち、AI スイング評価機能を利用した場合に外部へ送信される範囲については、第 1.4 項に定めます。</li>
+</ul>
+<h3>1.3 自動的に取得する情報</h3>
+<ul>
+<li><strong>端末識別子（device_id）</strong>: 本アプリが端末内で生成するランダムな識別子（UUID）です。サインインせずに無料体験（AI 評価の試用）を 1 回提供する際の重複利用判定に使用します。個人を特定するものではありません。</li>
+<li><strong>利用状況</strong>: AI スイング評価機能の実行回数・実行日時を、プラン上限（無料／有料）の管理のために記録します。</li>
+</ul>
+<h3>1.4 AI スイング評価機能の利用時に外部へ送信される情報</h3>
+<p>ユーザーが AI スイング評価機能を実行した場合に限り、以下の情報が当方のバックエンド（Supabase）を経由して AI 解析サービス（Anthropic 社の Claude API）へ送信されます。</p>
+<ul>
+<li><strong>スイングの静止画フレーム</strong>: 評価対象として抽出されたスイングの各フェーズ（アドレス／トップ／インパクト／フォロー等）の静止画像（人物が写ります）。</li>
+<li><strong>姿勢指標</strong>: 上記フレームに対応する姿勢推定から算出した数値指標。</li>
+</ul>
+<blockquote>
+<p>動画ファイル全体が送信されることはなく、評価に必要な数枚の静止画フレームと数値指標のみが送信されます。</p>
+</blockquote>
+<h3>1.5 購入・課金に関する情報</h3>
+<ul>
+<li>有料プラン（Premium）を購入した場合、課金管理サービス（RevenueCat）および各アプリストア（Apple App Store / Google Play）を通じて、購入・サブスクリプションの状態（契約の有無、種別、有効期限等）を取得・管理します。</li>
+<li><strong>クレジットカード番号等の決済情報は、各アプリストアが処理するものであり、当方は取得しません。</strong></li>
+</ul>
+<hr>
+<h2>2. 利用目的</h2>
+<p>取得した情報は、以下の目的で利用します。</p>
+<ol>
+<li>本アプリの機能（撮影・再生・解析・比較・保存）の提供</li>
+<li>アカウントの認証・管理</li>
+<li>AI スイング評価機能の提供（静止画フレーム・姿勢指標の解析）</li>
+<li>無料／有料プランの利用上限の管理</li>
+<li>有料プランの課金・サブスクリプション状態の管理</li>
+<li>お問い合わせへの対応</li>
+<li>不正利用の防止、本アプリの保守・改善</li>
+<li>法令に基づく対応</li>
+</ol>
+<hr>
+<h2>3. 第三者へのデータの取扱い委託・提供</h2>
+<p>当方は、本アプリの提供に必要な範囲で、以下の外部サービスにデータの取扱いを委託します。これらの事業者は日本国外（主に米国）にサーバーを置く場合があり、ユーザー情報が国外に移転・保管されることがあります。</p>
+<table>
+<thead>
+<tr>
+<th>委託先</th>
+<th>目的</th>
+<th>取り扱う主な情報</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Supabase（Supabase, Inc.）</td>
+<td>認証・データベース・バックエンド機能</td>
+<td>メールアドレス、評価履歴、購入状態、device_id</td>
+</tr>
+<tr>
+<td>Anthropic（Anthropic PBC）</td>
+<td>AI スイング評価の解析</td>
+<td>スイングの静止画フレーム、姿勢指標</td>
+</tr>
+<tr>
+<td>RevenueCat（RevenueCat, Inc.）</td>
+<td>課金・サブスクリプション管理</td>
+<td>購入状態、アプリ内ユーザー識別子</td>
+</tr>
+<tr>
+<td>Apple（Apple Inc.）</td>
+<td>認証（任意）、アプリ内課金</td>
+<td>購入情報、サインイン情報</td>
+</tr>
+<tr>
+<td>Google（Google LLC）</td>
+<td>認証（Google サインイン）、アプリ内課金</td>
+<td>アカウント情報、購入情報</td>
+</tr>
+</tbody></table>
+<p>当方は、上記の委託に伴う場合および以下の場合を除き、ユーザーの個人情報を第三者に提供しません。</p>
+<ul>
+<li>ユーザーの同意がある場合</li>
+<li>法令に基づく場合</li>
+<li>人の生命・身体・財産の保護のために必要であり、本人の同意を得ることが困難な場合</li>
+</ul>
+<p>各委託先のプライバシーポリシーは、それぞれの事業者が公開するものをご参照ください。</p>
+<hr>
+<h2>4. データの保存期間と削除</h2>
+<ul>
+<li>端末内に保存されたスイング動画・姿勢データは、ユーザーが本アプリ内で削除するか、アプリをアンインストールすることで削除されます。</li>
+<li>アカウントに紐づくデータ（評価履歴、購入状態等）は、サービス提供に必要な期間保管します。</li>
+<li>アカウントおよび関連データの削除をご希望の場合は、<a href="mailto:mpp.studio.admin@gmail.com">mpp.studio.admin@gmail.com</a> までご連絡ください。法令上保管が義務付けられる情報を除き、合理的な期間内に削除します。</li>
+</ul>
+<hr>
+<h2>5. 端末の権限（パーミッション）</h2>
+<p>本アプリは以下の端末機能へのアクセス許可を求めます。許可はいつでも端末の設定から変更できます。</p>
+<ul>
+<li><strong>カメラ</strong>: スイング動画の撮影のため。</li>
+<li><strong>マイク</strong>: スイング動画に音声を記録するため。</li>
+<li><strong>フォトライブラリ（写真・動画）</strong>: スイング動画をギャラリーに保存・取り込みするため（ユーザーが操作した場合のみ）。</li>
+</ul>
+<hr>
+<h2>6. AI 評価に関する注意</h2>
+<p>AI スイング評価機能が提供する評価・アドバイスは、技術的な解析に基づく<strong>参考情報</strong>であり、その正確性・有用性を保証するものではありません。医療上の助言や、専門指導者（プロコーチ等）による指導の代替となるものではありません。</p>
+<hr>
+<h2>7. 子どものプライバシー</h2>
+<p>本アプリは、各アプリストアで定める年齢区分に従って提供されます。当方は、保護者の同意なく、対象年齢に満たない子どもから意図的に個人情報を取得することはありません。</p>
+<hr>
+<h2>8. 安全管理措置</h2>
+<p>当方は、取得した情報の漏えい・滅失・毀損を防止するため、通信の暗号化（HTTPS）、アクセス権限の制限等の合理的な安全管理措置を講じます。</p>
+<hr>
+<h2>9. 本ポリシーの変更</h2>
+<p>当方は、必要に応じて本ポリシーを変更することがあります。重要な変更を行う場合は、本アプリ内またはストアの掲載情報を通じて周知します。変更後に本アプリを利用した場合、変更後のポリシーに同意したものとみなします。</p>
+<hr>
+<h2>10. お問い合わせ窓口</h2>
+<p>本ポリシーおよび個人情報の取扱いに関するお問い合わせは、以下までご連絡ください。</p>
+<ul>
+<li><strong>提供者</strong>: mppstudio</li>
+<li><strong>メール</strong>: <a href="mailto:mpp.studio.admin@gmail.com">mpp.studio.admin@gmail.com</a></li>
+</ul>
+<hr>
+<h2>11. 準拠法</h2>
+<p>本ポリシーの解釈および適用は、日本法に準拠します。</p>
+
+<footer>GolfSwingTracer — mppstudio</footer>
+</main>
+</body>
+</html>
